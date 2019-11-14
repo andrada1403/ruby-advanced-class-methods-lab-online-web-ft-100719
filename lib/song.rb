@@ -43,7 +43,7 @@ class Song
     self.all.sort_by {|x| x.name }
   end
   def self.new_from_filename(file)
-    file.gsub(".mp3","").split(" - ")
-
+    info=file.gsub(".mp3","").split(" - ")
+    info[1]
   end
 end
