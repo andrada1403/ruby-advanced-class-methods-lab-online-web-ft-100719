@@ -46,5 +46,6 @@ class Song
     info=file.gsub(".mp3","").split(" - ")
     info[1]
     self.new_by_name(info[1])
+    self.new_by_name(info[0])
   end
 end
