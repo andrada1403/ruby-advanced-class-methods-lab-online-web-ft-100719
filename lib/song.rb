@@ -48,5 +48,6 @@ class Song
     #binding.pry
     song=self.new_by_name(info[1])
     song.artist_name=info[0]
+    song
   end
 end
