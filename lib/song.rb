@@ -40,6 +40,6 @@ class Song
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end
   def self.alphabetical
-    self.all.sort_by {|x| x.sort }
+    self.all.sort_by {|x| x.name }
   end
 end
