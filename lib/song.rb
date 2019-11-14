@@ -40,6 +40,8 @@ class Song
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end
   def self.alphabetical
-    self.all.name
+    self.all.collect do |x|
+      x.name
+    end
   end
 end
